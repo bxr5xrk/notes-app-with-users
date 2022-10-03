@@ -32,6 +32,6 @@ model Note {
     title     String?
     content   String?
     category  Category @default(Idea)
-    author    User     @relation(fields: [authorId], references: [id])
     authorId  String
+    author    User     @relation(fields: [authorId], references: [id])
 }
